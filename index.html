@@ -11,8 +11,9 @@
         }
     </style>
 </head>
-<body class="poppins bg-blue-50">
+<body class="poppins bg-blue-50 m-4">
                              <!-- navbar -->
+  <main id="main-container">
     <header class="max-w-screen-xl mx-auto rounded-3xl">
         <nav class="flex justify-between items-center m-4 p-4">
             <div class="flex">
@@ -31,7 +32,7 @@
         </nav>
     </header>
                            <!-- main section  -->
-    <main class="max-w-screen-xl mx-auto grid grid-cols-3 gap-4">
+    <section class="max-w-screen-xl mx-auto grid grid-cols-3 gap-4">
                            <!-- discover borard -->
         <section class="col-span-2 bg-white rounded-2xl ">
                             <!-- discover navbar -->
@@ -45,8 +46,8 @@
                     </div>
                  </div>
                  <!-- Board -->
-                  <div class="col-span-2 flex justify-center items-center bg-gradient-to-r from-[#3752FD] to-[#9BA8F8] p-5 rounded-xl ">
-                    <div><img src="assets/board.png" alt=""></div>
+                  <div id="Discover-board" class="col-span-2 flex justify-center items-center bg-gradient-to-r from-[#3752FD] to-[#9BA8F8] p-5 rounded-xl ">
+                    <div id="discover"><img src="assets/board.png" alt=""></div>
                     <div class="text-white">Discover Something<br>New Today!</div>
                   </div>
                   <!-- date -->
@@ -118,12 +119,6 @@
                     <div><button class="text-white rounded-lg py-2 px-4 bg-blue-700 ">Completed</button></div>
                 </div>
                </div>
-               
-               
-
-               
-                
-
                </section>
         </section>
                            <!-- Activity log -->
@@ -139,6 +134,48 @@
             </nav>
 
         </section>
-    </main>
+    </section>
+  </main>
+    <footer class="FAQ-container">
+        <!-- FAQ -->
+        <section class="border-b-2 border-dashed border-gray-200 rounded-xl shadow-md bg-white my-5">
+            <header class="max-w-screen-xl mx-auto ">
+                <nav class="flex justify-between items-center p-4">
+                    <div class="flex">
+                     <img  src="assets/logo.png" alt="">
+                     <h1 class="text-4xl text-blue-950 mt-1 ml-2">Dev<span class="font-bold text-blue-950 text-4xl">Board</span></h1>
+                    </div>
+                    <div class="">
+                       <button id="btn-Desk" class="px-6 py-4 bg-blue-700 rounded-lg text-white ">Back to Desk</button>
+                    </div>
+                </nav>
+            </header>
+        </section>
+        <section class="max-w-screen-xl mx-auto  bg-blue-50 "> 
+            <h1 class="font-bold text-xl text-center my-5">Blogs</h1>
+            <div class="">
+                <h1 class="font-semibold text-lg p-5 bg-white rounded-lg mb-2">Question-1: What are the different ways to select an element in the DOM?</h1>
+                <p class="font-normal text-md p-5 bg-white rounded-lg mb-3">Use getElementById, getElementsByClassName, getElementsByTagName, getElementsByName, querySelector, and querySelectorAll to select elements in DOM.</p>
+            </div>
+            <div class="">
+                <h1 class="font-semibold text-lg p-5 bg-white rounded-lg mb-1">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h1>
+                <p class="font-normal text-md p-5 bg-white rounded-lg mb-3">innerHTML gets/sets HTML, innerText gets/sets visible text, and textContent gets/sets all text including hidden.</p>
+            </div>
+            <div class="">
+                <h1 class="font-semibold text-lg p-5 bg-white rounded-lg mb-1"> Question-3: What is event delegation in the DOM?</h1>
+                <p class="font-normal text-md p-5 bg-white rounded-lg mb-3">Event delegation allows a parent element to handle events from its child elements using event bubbling.</p>
+            </div>
+            <div class="">
+                <h1 class="font-semibold text-lg p-5 bg-white rounded-lg mb-1"> Question-4: What is event bubbling in the DOM?</h1>
+                <p class="font-normal text-md p-5 bg-white rounded-lg mb-3">Event bubbling means an event starts from the target element and propagates up to its parents.</p>
+            </div>
+            <div class="">
+                <h1 class="font-semibold text-lg p-5 bg-white rounded-lg mb-1"> How do you create, add, and remove elements using JavaScript?</h1>
+                <p class="font-normal text-md p-5 bg-white rounded-lg ">Use document.createElement(), appendChild(), removeChild(), or remove() to create, add, and remove elements.</p>
+            </div>
+        </section>
+    </footer>
+    <script src="script/toggole.js"></script>
+    <script src="script/toggole.js"></script>
 </body>
 </html>
