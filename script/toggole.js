@@ -1,9 +1,12 @@
-
-document.getElementById('Discover-board').addEventListener('click',function(){
+document.getElementById('faq-container').style.display = 'none';
+document.getElementById('discover-board').addEventListener('click',function(){
     handleToggle('main-container','none');
-    handleToggle('FAQ-container','block');
+    handleToggle('faq-container','block');
 })
 document.getElementById('btn-Desk').addEventListener('click',function(){
-    handleToggle('FAQ-container','none');
     handleToggle('main-container','block');
+    handleToggle('faq-container','none');
 })
+
+
+
