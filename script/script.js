@@ -1,6 +1,6 @@
 // btn1........
-document.getElementById('btn-1').addEventListener('click',function(){
-
+document.getElementById('btn-1').addEventListener('click',function(event){
+   event.preventDefault();
     const task = getInnerTextValueById('task');
     const countAdd = getInnerTextValueById('count-add');
     alert('Board update successfully')
@@ -22,7 +22,8 @@ document.getElementById('btn-1').addEventListener('click',function(){
     historyContainer.appendChild(div);
 })
 // btn2......
-document.getElementById('btn-2').addEventListener('click',function(){
+document.getElementById('btn-2').addEventListener('click',function(event){
+    event.preventDefault();
     const task = getInnerTextValueById('task');
     const countAdd = getInnerTextValueById('count-add');
     alert('Board update successfully')
@@ -45,7 +46,8 @@ document.getElementById('btn-2').addEventListener('click',function(){
    
 })
 // btn3...
-document.getElementById('btn-3').addEventListener('click',function(){
+document.getElementById('btn-3').addEventListener('click',function(event){
+    event.preventDefault();
     const task = getInnerTextValueById('task');
     const countAdd = getInnerTextValueById('count-add');
     alert('Board update successfully')
@@ -67,7 +69,8 @@ document.getElementById('btn-3').addEventListener('click',function(){
     historyContainer.appendChild(div);
 })
 // btn4 ..
-document.getElementById('btn-4').addEventListener('click',function(){
+document.getElementById('btn-4').addEventListener('click',function(event){
+    event.preventDefault();
     const task = getInnerTextValueById('task');
     const countAdd = getInnerTextValueById('count-add');
     alert('Board update successfully')
@@ -89,7 +92,8 @@ document.getElementById('btn-4').addEventListener('click',function(){
     historyContainer.appendChild(div);
 })
 // btn5.......
-document.getElementById('btn-5').addEventListener('click',function(){
+document.getElementById('btn-5').addEventListener('click',function(event){
+    event.preventDefault();
     const task = getInnerTextValueById('task');
     const countAdd = getInnerTextValueById('count-add');
     alert('Board update successfully')
@@ -112,7 +116,8 @@ document.getElementById('btn-5').addEventListener('click',function(){
    
 })
 // btn6....
-document.getElementById('btn-6').addEventListener('click',function(){
+document.getElementById('btn-6').addEventListener('click',function(event){
+    event.preventDefault();
     const task = getInnerTextValueById('task');
     const countAdd = getInnerTextValueById('count-add');
     alert('Board update successfully')
@@ -136,18 +141,20 @@ document.getElementById('btn-6').addEventListener('click',function(){
    
 })
 // btn-clear ....
-document.getElementById('Clear').addEventListener('click',function(){
+document.getElementById('Clear').addEventListener('click',function(event){
+    event.preventDefault();
     const historyCon=document.getElementById('history-container');
     historyCon.innerHTML='';
     
 })
 // theme..
-document.getElementById('theme').addEventListener('click',function(){
-    
+document.getElementById('theme').addEventListener('click',function(event){
+    event.preventDefault();
     const allColor=`#${Math.floor(Math.random()* 16777215).toString(16)}`;
     document.body.style.backgroundColor=allColor;
 })
 //  borad date update 
+
 const date = document.getElementById('update-date');
 const current = new Date().toLocaleString();
 date.innerText=current;
