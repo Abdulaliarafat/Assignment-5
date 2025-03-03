@@ -8,5 +8,5 @@ function getInnerTextValueById(id){
     return convertedTextValue;
 }
 function setInnerTextById(id,value){
-    document.getElementById(id).innerText=value;
+    document.getElementById(id).innerText = value;
 }
